@@ -1,14 +1,13 @@
 package org.example;
-import java.lang.invoke.SwitchPoint;
 import java.util.Scanner;
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         Scanner numbers = new Scanner(System.in);
 
         int a;
-        int b ;
+        int b;
         int c;
         int d;
         String op;
@@ -23,16 +22,14 @@ public class Main {
         d = numbers.nextInt();
         Scanner operation = new Scanner(System.in);
         op = operation.next();
-        switch (op) {
-            case "+":
-                System.out.println(a + "+" + b + c + d + "=" + (a + b + c + d));
-                break;
+
+        if (op.equals("+")) {
+            System.out.println(a + "+" + b + c + d + "=" + (a + b + c + d));
 
 
-
+        }
 
 
         }
 
     }
-}
